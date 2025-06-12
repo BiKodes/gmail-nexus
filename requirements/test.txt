@@ -1,0 +1,10 @@
+-r base.txt
+
+mock
+coverage
+flake8
+pytest
+pytest-faulthandler
+tox
+pytest-xdist
+pytest-cov
