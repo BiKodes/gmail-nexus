@@ -2,10 +2,10 @@
 from setuptools import setup, find_packages
 
 from src.version import __version__
-from nexus.utils import read_file
+from src.utils import read_file_contents
 
 VERSION = __version__
-README = read_file('README.rst', package_level=False)
+README = read_file_contents('README.rst', within_package=False)
 name = 'gmail-nexus'
 
 setup(
