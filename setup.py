@@ -1,7 +1,7 @@
 """Setup file."""
 from setuptools import setup, find_packages
 
-from nexus.version import __version__
+from src.version import __version__
 from nexus.utils import read_file
 
 VERSION = __version__
