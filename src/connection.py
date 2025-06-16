@@ -86,3 +86,11 @@ class GoogleAPIConnection:
             )
         )
         return discovery.build(self.service, self.version, http=http)
+    
+class GmailAPIConnection:
+    """Establishes a connection to the Gmail API."""
+
+    def gmail_api_connect(self):
+        """Authenticate and return a Gmail API service instance."""
+        google_api = GoogleAPIConnection(service='gmail', version='v1')
+        return google_api.get_service()
